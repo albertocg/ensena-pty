@@ -10892,7 +10892,7 @@ Copyright (c) 2015 Daniel Eden
 /* ------------------------------------------------------------ *	Section Featured
 \* ------------------------------------------------------------ */
 .section-featured {
-  padding: 85px 0 124px;
+  padding: 10px 0 0px;
   /*  Mobile  */ }
   .section-featured .section-head {
     margin-bottom: 22px; }
@@ -10904,10 +10904,12 @@ Copyright (c) 2015 Daniel Eden
     .section-featured .section-head h4 {
       margin-bottom: 0px !important;
     }
-    .section-featured .section-head .section-image {
+    .section-featured .section-head .section-image, .slider-testimonials .section-head .section-image {
       margin-bottom: 10px; }
     .section-featured .section-head .section-image:before,
-    .section-featured .section-head .section-image:after {
+    .section-featured .section-head .section-image:after,
+    .slider-testimonials .section-head .section-image:before,
+    .slider-testimonials .section-head .section-image:after {
       content: '';
       display: inline-block;
       vertical-align: middle;
@@ -10968,7 +10970,7 @@ Copyright (c) 2015 Daniel Eden
     font-weight: 300;
   }
   .section-sponsor .section-body ul li {
-    text-decoration: none;
+    list-style-type: none;
     margin-bottom: 10px;
   }
   .section-sponsor .section-body ul li img {
@@ -11146,11 +11148,11 @@ Copyright (c) 2015 Daniel Eden
 /* ------------------------------------------------------------ *	Section Testimonials
 \* ------------------------------------------------------------ */
 .section-testimonials {
-  padding: 90px 0 0;
+  padding: 0px 0 0;
   /*  Mobile  */ }
   .section-testimonials .section-head {
     margin-bottom: 28px;
-    text-align: center; }
+    text-align: left; }
     .section-testimonials .section-head .section-title {
       margin-bottom: 12px;
       text-transform: uppercase;
@@ -11166,7 +11168,7 @@ Copyright (c) 2015 Daniel Eden
       width: 40px;
       height: 1px;
       margin: 0 6px;
-      background: #fa6f1c; }
+      background: #fff; }
     .section-testimonials .section-head p {
       font-size: 14px;
       text-transform: uppercase;
@@ -12131,7 +12133,7 @@ Copyright (c) 2015 Daniel Eden
 .slider-testimonials {
   position: relative;
   padding: 60px 0 41px;
-  background: #fa6f1c;
+  background: url("../images/test-bg.jpg");
   /*  Tablet Portrait  */
   /*  Mobile  */ }
   .slider-testimonials:before {
@@ -12143,6 +12145,16 @@ Copyright (c) 2015 Daniel Eden
     border-width: 6px 6px 0;
     border-style: solid;
     border-color: #fff transparent; }
+  .slider-testimonials .section-head {
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .slider-testimonials .section-head .section-title {
+    color: #fff;
+    font-weight: 900;
+  }
+
   .slider-testimonials .owl-dots {
     text-align: center; }
   .slider-testimonials .owl-dot {
@@ -12152,16 +12164,22 @@ Copyright (c) 2015 Daniel Eden
     height: 12px;
     margin: 0 4px;
     border-radius: 50%;
-    background: #c65410; }
+    background: #ffffff; }
   .slider-testimonials .owl-dot:hover,
   .slider-testimonials .owl-dot.active {
-    background: #97400c; }
+    background: #298FC0; }
   .slider-testimonials .slides {
     margin: 0;
     list-style: none outside none; }
   .slider-testimonials .slide {
     color: #fff;
     text-align: center; }
+  .slide img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    width: 250px;
+    height: auto;
+  }
     .slider-testimonials .slide .slide-entry p {
       font-size: 21px;
       font-style: italic;
@@ -12173,10 +12191,10 @@ Copyright (c) 2015 Daniel Eden
       max-width: 170px;
       height: 1px;
       margin: 28px auto 25px;
-      background: #de6218; }
+      background: #ffffff; }
     .slider-testimonials .slide .slide-foot p {
       margin: 0 0 10px;
-      color: #83380b;
+      color: #fff;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       font-weight: bold; }
@@ -12631,12 +12649,12 @@ Copyright (c) 2015 Daniel Eden
 \* ------------------------------------------------------------ */
 .callout {
   padding: 43px 0;
-  background: #000;
+  background: #fff;
   /*  Small Desktop  */
   /*  Mobile  */ }
   .callout .callout-title {
     font-weight: bold;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     line-height: 1.5; }
@@ -12648,7 +12666,11 @@ Copyright (c) 2015 Daniel Eden
     display: inline-block;
     vertical-align: top;
     min-width: 213px;
-    margin: 0; }
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2px;
+    margin-right: 2px;
+    }
   .callout .callout-separator {
     color: #fff;
     font-weight: bold;
