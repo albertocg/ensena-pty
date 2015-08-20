@@ -11201,6 +11201,10 @@ Copyright (c) 2015 Daniel Eden
 .footer {
   /*  Tablet Portrait  */
   /*  Mobile  */ }
+  .footer .footer-section img {
+    width: 70%;
+    height: auto;
+  }
   .footer .footer-section .footer-section-title {
     color: #fff;
     font-weight: 900;
@@ -11213,7 +11217,7 @@ Copyright (c) 2015 Daniel Eden
     width: 46px;
     height: 1px;
     margin: 22px 0 40px;
-    background: #fa6f1c; }
+    background: #BD222A; }
   .footer .footer-section .footer-section-body {
     overflow: hidden; }
   .footer .footer-section .footer-section-body > p {
@@ -11221,7 +11225,7 @@ Copyright (c) 2015 Daniel Eden
     letter-spacing: 0.025em; }
   .footer .footer-body {
     padding: 85px 0;
-    background: #27262c url(../images/footer-bg.png) no-repeat center 0; }
+    background: #27262C;}
   .footer .footer-contacts {
     letter-spacing: 0.025em; }
     .footer .footer-contacts span {
@@ -11245,7 +11249,8 @@ Copyright (c) 2015 Daniel Eden
       margin: 0;
       line-height: 2.2; }
     .footer .footer-credits a {
-      color: #fff; }
+      color: #fff;
+      font-weight: 600;}
     .footer .footer-credits a:hover {
       opacity: .7; }
   .footer .footer-socials {
@@ -12134,6 +12139,8 @@ Copyright (c) 2015 Daniel Eden
   position: relative;
   padding: 60px 0 41px;
   background: url("../images/test-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   /*  Tablet Portrait  */
   /*  Mobile  */ }
   .slider-testimonials:before {
@@ -12174,6 +12181,11 @@ Copyright (c) 2015 Daniel Eden
   .slider-testimonials .slide {
     color: #fff;
     text-align: center; }
+  .slider-testimonials .slide h2 {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
   .slide img {
     border-radius: 50%;
     border: 5px solid #fff;
@@ -12844,12 +12856,10 @@ Copyright (c) 2015 Daniel Eden
     float: right;
     width: 50px;
     height: 40px;
-    background: #fa6f1c;
+    background: #298FC2;
     color: #fff;
     border: 0;
     cursor: pointer; }
-  .subscribe .subscribe-btn:hover {
-    background: #de6218; }
   .subscribe .subscribe-inner {
     overflow: hidden; }
   .subscribe .subscribe-field {
