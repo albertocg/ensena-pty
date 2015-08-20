@@ -128,14 +128,14 @@
 
 		$nav.find('li > span').on('click', function(e) {
 			e.preventDefault();
-			
+
 			$(this).text( $(this).text() == "+" ? "-" : "+");
 			$(this).siblings('ul').slideToggle(300);
 		});
 
 		$('.button-burger').on('click', function (event) {
-			$(this).toggleClass('active');  
-			
+			$(this).toggleClass('active');
+
 			$nav.slideToggle(300);
 			event.preventDefault();
 		});
@@ -181,7 +181,7 @@
 		});
 
 		var map = new google.maps.Map(document.getElementById('event-map'), mapOptions);
-		
+
 	}
 
 })(jQuery, window, document);
