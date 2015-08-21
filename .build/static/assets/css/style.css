@@ -13911,4 +13911,43 @@ h4.section-title i {
     font-weight: 900!important;
     letter-spacing: 0.05em!important;
 }
+.row.wide {
+    max-width: 100%;
+}
+.section-sponsor {
+    position: relative;
+    background: #FAFAFA;
+}
+.icon-left {
+    height: 60px;
+    float: left;
+    margin-right: 15px;
+}
+.section-sponsor .section-head h1 {
+    color: #fff;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+.icon-left-p {
+    font-size: 24px;
+    font-family: 'Open Sans';
+    line-height: 55px!important;
+    font-weight: 300;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.section-sponsor .section-inner {
+    padding: 40px 0 50px 40px;
+}
+@media (max-width: 1882px) {
+   .icon-left-p {
+        font-size: 18px;
+   }
+}
 
