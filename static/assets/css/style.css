@@ -12192,7 +12192,7 @@ Copyright (c) 2015 Daniel Eden
       font-style: italic;
       letter-spacing: 0.05em;
       line-height: 1.6; }
-    .slider-testimonials .slide .slide-entry:after {
+    .slider-testimonials .slide h2:before {
       content: '';
       display: block;
       max-width: 170px;
