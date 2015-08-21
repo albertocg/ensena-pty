@@ -10956,14 +10956,15 @@ Copyright (c) 2015 Daniel Eden
     .section-sponsor .section-head h2 {
       color: #4D4845;
       text-transform: uppercase;
-      font-weight: bold;
+      font-weight: 900;
       letter-spacing: 0.05em;
       margin-top: 0px;
       margin-bottom: 15px;}
     .section-sponsor .section-head p {
-      line-height: 1.8; }
+      line-height: 1.8;
+      font-weight: 500;}
   .section-sponsor .section-body {
-    margin-bottom: 43px; }
+    margin-bottom: 33px; }
   .section-sponsor .section-body p {
     line-height: 1.95; }
   .section-sponsor .section-body ul {
@@ -10973,13 +10974,12 @@ Copyright (c) 2015 Daniel Eden
   .section-sponsor .section-body ul li {
     list-style-type: none;
     margin-bottom: 10px;
+    font-size: 1.3rem;
   }
   .section-sponsor .section-body ul li img {
-    width: 75px;
+    width: 140px;
     height:auto;
   }
-  .section-sponsor .section-foot .button {
-    width: 172px; }
   .section-sponsor .section-foot .section-foot-separator {
     display: inline-block;
     vertical-align: middle;
