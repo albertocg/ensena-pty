@@ -10850,7 +10850,7 @@ Copyright (c) 2015 Daniel Eden
   .header .header-logo {
     margin: 32px 0 0 0; }
     .header .header-logo img {
-      width: 15%;
+      width: 15rem;
       height: auto;
       margin-top: 32px !important;
     }
@@ -10893,6 +10893,7 @@ Copyright (c) 2015 Daniel Eden
 \* ------------------------------------------------------------ */
 .section-featured {
   padding: 10px 0 0px;
+  margin-top: 50px;
   /*  Mobile  */ }
   .section-featured .section-head {
     margin-bottom: 22px; }
@@ -11017,7 +11018,7 @@ Copyright (c) 2015 Daniel Eden
 /* ------------------------------------------------------------ *	Section Updates
 \* ------------------------------------------------------------ */
 .section-updates {
-  padding: 94px 0 31px;
+  padding: 20px 0 31px;
   /*  Mobile  */ }
   @media (max-width: 767px) {
     .section-updates {
@@ -11072,19 +11073,13 @@ Copyright (c) 2015 Daniel Eden
   padding-left: 40px;
   /*  Tablet Portrait  */
   /*  Mobile  */ }
-  .section-upcoming-event:before {
-    content: '';
-    position: absolute;
-    left: -15px;
-    top: -15px;
-    bottom: 0;
-    width: 1px;
-    background: #dddbe8; }
   .section-upcoming-event span {
     display: block;
     text-align: right;
     font-weight: 600;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
   }
   .section-upcoming-event a {
     color: #000;
