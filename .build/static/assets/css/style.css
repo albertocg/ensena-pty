@@ -10865,10 +10865,11 @@ Copyright (c) 2015 Daniel Eden
     margin-top: 31px; }
   .header .header-actions {
     float: left;
-    margin-left: 10px; }
+    margin-left: 10px;
+    margin-top: -10px;}
   .header .header-actions .button {
     margin: 0;
-    min-width: 122px; }
+    /*min-width: 122px;*/ }
   @media (max-width: 1023px) {
     .header .header-actions {
       margin-right: 50px; } }
@@ -11378,8 +11379,9 @@ Copyright (c) 2015 Daniel Eden
   font-weight: 900;
 }
 .button.blue {
-  background-color: #298FC2;
-  border: 2px solid #298FC2;
+    background-color: #298FC2;
+    border: 2px solid #298FC2;
+    font-size: 11px;
 }
   .button:hover,
   .button:focus {
@@ -12677,7 +12679,7 @@ Copyright (c) 2015 Daniel Eden
     text-transform: uppercase;
     letter-spacing: 0.01em;
     line-height: 1.5;
-    font-size: 28px }
+    font-size: 27px }
   .callout .callout-actions {
     padding: 18px 0;
     font-size: 0;
@@ -13908,8 +13910,9 @@ h4.section-title i {
     /* margin-right: -5px; */
     margin-left: 10px;
     max-height: 70px;
-        float: left;
+    float: left;
     margin-right: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.83);
 }
 .section-testimonials .section-head .section-title {
     text-transform: uppercase!important;
@@ -13946,6 +13949,15 @@ h4.section-title i {
 }
 .mb-15 {
     margin-bottom: 15px;
+}
+.callout.dark {
+    background: #298EC1;
+}
+h2.callout-title.dark {
+    color: #fff;
+}
+a.button.red.callbox {
+    width: 80%;
 }
 .section-sponsor .section-inner {
     padding: 40px 0 50px 40px;
