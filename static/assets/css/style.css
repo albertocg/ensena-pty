@@ -11370,6 +11370,12 @@ Copyright (c) 2015 Daniel Eden
 .button.red {
   background-color: #D22630;
   border: 2px solid #D22630;
+  font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 900;
 }
 .button.blue {
   background-color: #298FC2;
@@ -11665,7 +11671,6 @@ Copyright (c) 2015 Daniel Eden
       transform: translateX(-50%); }
     .slider-intro .slide .slide-progress {
       overflow: hidden;
-      border-bottom: 1px solid #fff;
       line-height: 1; }
     .slider-intro .slide .slide-progress span {
       display: block;
@@ -11678,8 +11683,8 @@ Copyright (c) 2015 Daniel Eden
     .slider-intro .slide .slide-to-go {
       float: left;
       width: 50%;
-      height: 124px;
-      padding-top: 38px;
+      height: 200px;
+      padding-top: 78px;
       text-align: center;
       font-size: 16px;
       text-transform: uppercase; }
@@ -13950,4 +13955,3 @@ h4.section-title i {
         font-size: 18px;
    }
 }
-
