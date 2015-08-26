@@ -11371,7 +11371,7 @@ Copyright (c) 2015 Daniel Eden
 .button.red {
   background-color: #D22630;
   border: 2px solid #D22630;
-  font-size: 13px;
+  font-size: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 25px;
@@ -11622,7 +11622,7 @@ Copyright (c) 2015 Daniel Eden
     list-style: none outside none; }
   .slider-intro .slide {
     position: relative;
-    height: 750px; }
+    height: 780px; }
     .slider-intro .slide .slide-image {
       position: absolute;
       left: 0;
@@ -11645,12 +11645,11 @@ Copyright (c) 2015 Daniel Eden
     .slider-intro .slide .slide-content b {
       font-weight: 900;
     }
-   .slider-intro .slide .slide-title {
-    margin: 20px 0 18px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-}
+    .slider-intro .slide .slide-title {
+      margin: 44px 0 18px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;}
     .slider-intro .slide .slide-aside {
       position: relative;
       color: #ffffff;
@@ -11684,13 +11683,13 @@ Copyright (c) 2015 Daniel Eden
       font-size: 36px; }
     .slider-intro .slide .slide-raised,
     .slider-intro .slide .slide-to-go {
-    float: left;
-    width: 50%;
-    height: 175px;
-    padding-top: 55px;
-    text-align: center;
-    font-size: 16px;
-    text-transform: uppercase; }
+      float: left;
+      width: 50%;
+      height: 200px;
+      padding-top: 78px;
+      text-align: center;
+      font-size: 16px;
+      text-transform: uppercase; }
     .slider-intro .slide .slide-to-go {
       border-left: 1px solid #fff; }
     .slider-intro .slide .slide-actions a {
@@ -12213,11 +12212,11 @@ Copyright (c) 2015 Daniel Eden
       margin: 28px auto 25px;
       background: #ffffff; }
 .slider-testimonials .slide .slide-foot p {
-    margin: 0 0 10px;
+        margin: 0 0 10px;
     color: #FFFFFF;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 400;
 }
   @media (max-width: 1023px) {
@@ -13963,20 +13962,8 @@ a.button.red.callbox {
 .section-sponsor .section-inner {
     padding: 40px 0 50px 40px;
 }
-
-@media screen and (max-width: 1440px) {
-.slider-intro .slide, .slider-intro .slide-alt {
-    height: 650px;
+@media (max-width: 1882px) {
+   .icon-left-p {
+        font-size: 18px;
+   }
 }
-
-@media screen and (max-width: 1366px) {
-.slider-intro .slide, .slider-intro .slide-alt {
-    height: 600px;
-}
-}
-@media screen and (max-width: 768px) {
-.slider-intro .slide, .slider-intro .slide-alt {
-    height: 460px;
-}
-}
-
