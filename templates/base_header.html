@@ -1,0 +1,22 @@
+<header class="header">
+  <div class="row">
+    <div class="columns small-12"><a href="#" class="header-logo">
+        <img src="{% static 'assets/images/logo.png' %}" alt="Charity | Foundation">
+      </a>
+
+      <div class="header-inner">
+        <a href="#" class="button-burger">
+          <span></span>
+        </a>
+
+        <nav class="nav">
+            {% include "base_header_links.html" %}
+        </nav><!-- /.nav -->
+
+        <div class="header-actions">
+          <a href="page-donate.html" class="button red">¡Aplica!</a>
+          <a href="page-donate.html" class="button blue">Dona</a>
+        </div><!-- /.header-actions -->
+      </div><!-- /.header-inner --></div><!-- /.columns small-12 -->
+  </div><!-- /.row -->
+</header><!-- /.header -->
