@@ -1,0 +1,11 @@
+/*
+ * Custom
+ */
+
+.row.space-1{
+  padding: 1rem;
+}
+
+article.post-single .entry blockquote p{
+  border-left: 3px solid #d22630;
+}
