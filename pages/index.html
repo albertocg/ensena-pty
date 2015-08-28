@@ -1,51 +1,8 @@
 {% extends "base.html" %}
 
 {% block body %}
-<div class="slider-intro">
-		<div class="slider-clip">
-			<ul class="slides owl-carousel">
-				<li class="slide">
-					<div class="slide-image fullscreener">
-						<img src="{% static 'assets/images/slider-intro-image.jpg' %}" height="890" width="1800" alt="">
-					</div><!-- /.slide-image -->
 
-					<div class="slide-content">
-						<div class="row">
-							<div class="columns large-7">
-								<h2 class="slide-title">Puedes hacerlo realidad</h2><!-- /.slide-title -->
-
-								<div class="slide-entry">
-									<p>¡Aplica al <b>programa de liderazgo!</b> Tú eres parte del cambio y puedes ayudar a lograr una educación de calidad a todos los niños y jovenes en Panamá</p>
-								</div><!-- /.slide-entry -->
-							</div><!-- /.columns large-7 -->
-
-							<div class="columns large-5">
-								<div class="slide-aside">
-
-									<div class="slide-progress">
-										<div class="slide-raised rojoAlt">
-											<span>Estudiantes</span>
-
-											<strong>2.340</strong>
-										</div><!-- /.slide-raised -->
-
-										<div class="slide-to-go rojo">
-											<span>Profesores de ExP</span>
-
-											<strong>26</strong>
-										</div><!-- /.slide-to-go -->
-									</div><!-- /.slide-progress -->
-								</div><!-- /.slide-aside -->
-							</div><!-- /.columns large-5 -->
-						</div><!-- /.row -->
-					</div><!-- /.slide-content -->
-				</li><!-- /.slide -->
-
-			</ul><!-- /.slides -->
-		</div><!-- /.slider-clip -->
-
-		<div class="slider-actions"></div><!-- /.slider-actions -->
-	</div><!-- /.slider-intro -->
+	{% include "index/slider.html" %}
 
 	<section class="section-featured">
 		<div class="row">
