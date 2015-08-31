@@ -9,3 +9,7 @@
 article.post-single .entry blockquote p{
   border-left: 3px solid #d22630;
 }
+
+.footer-section img{
+  max-width: 350px;
+}
