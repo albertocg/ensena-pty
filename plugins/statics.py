@@ -18,6 +18,10 @@ SOCIAL_LINKS = [
 
 HEADER_BACKGROUND = "assets/images/header-bg.jpg"
 
+CONTACT_EMAIL = "info@ensenaporpanama.com"
+CONTACT_PHONE = "+507 322 0437"
+CONTACT_ADDRESS = "Edif. 909, Calle 74 con Calle 50, San Francisco"
+
 def preBuildPage(site, page, context, data):
     context['header_background'] = HEADER_BACKGROUND
     context['header_links'] = PAGE_LINKS
@@ -26,4 +30,9 @@ def preBuildPage(site, page, context, data):
         PAGE_LINKS[len(PAGE_LINKS)/2:],
     ]
     context['social_links'] = SOCIAL_LINKS
+    context['contact_email'] = CONTACT_EMAIL
+    context['contact_phone'] = CONTACT_PHONE
+    context['contact_address'] = CONTACT_ADDRESS
+    context['contact_email_link'] = "mailto:" + CONTACT_EMAIL
+    context['contact_phone_link'] = "tel:" + CONTACT_PHONE.replace(" ", "")
     return context, data
