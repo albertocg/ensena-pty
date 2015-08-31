@@ -10,11 +10,20 @@ PAGE_LINKS = [
     {'url':'allies.html', 'title':'Aliados'},
 ]
 
+SOCIAL_LINKS = [
+    {'icon':'fa-facebook', 'url':'https://www.facebook.com/ensenaxpanama'},
+    {'icon':'fa-twitter', 'url':'https://twitter.com/ensenaxpanama'},
+    {'icon':'fa-instagram', 'url':'https://instagram.com/ensenaxpanama/'},
+]
+
+HEADER_BACKGROUND = "assets/images/header-bg.jpg"
+
 def preBuildPage(site, page, context, data):
-    context['header_background'] = "assets/images/header-bg.jpg"
+    context['header_background'] = HEADER_BACKGROUND
     context['header_links'] = PAGE_LINKS
     context['footer_links'] = [
         PAGE_LINKS[:len(PAGE_LINKS)/2],
         PAGE_LINKS[len(PAGE_LINKS)/2:],
     ]
+    context['social_links'] = SOCIAL_LINKS
     return context, data

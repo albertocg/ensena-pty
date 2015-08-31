@@ -9,23 +9,14 @@
 
       <div class="bar-socials">
         <ul>
-          <li>
-            <a href="https://www.facebook.com/ensenaxpanama" target="_blank">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://twitter.com/ensenaxpanama" target="_blank">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://instagram.com/ensenaxpanama/" target="_blank">
-              <i class="fa fa-instagram"></i>
-            </a>
-          </li>
+          {# defined in statics.py #}
+          {% for social_link in social_links %}
+            <li>
+              <a href="{{ social_link.url }}" target="_blank">
+                <i class="fa {{ social_link.icon }}"></i>
+              </a>
+            </li>
+          {% endfor %}
         </ul>
       </div><!-- /.bar-socials -->
     </div><!-- /.columns small-12 -->
