@@ -17,7 +17,14 @@
 
           <div class="footer-section-body">
 
-            {% include 'base_footer_links.html' %}
+            {% for sublist in footer_links %}
+              <ul class="list-links">
+                {% for item in sublist %}
+                  <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                {% endfor %}
+              </ul>
+            {% endfor %}
+
           </div><!-- /.footer-section-body -->
         </div><!-- /.footer-section -->
       </div><!-- /.columns large-3 medium-12 -->

@@ -10,7 +10,11 @@
         </a>
 
         <nav class="nav">
-            {% include "base_header_links.html" %}
+          <ul>
+            {% for link_item in header_links %}
+              <li><a href="{{ link_item.url }}">{{ link_item.title }}</a></li>
+            {% endfor %}
+          </ul>
         </nav><!-- /.nav -->
 
         <div class="header-actions">
