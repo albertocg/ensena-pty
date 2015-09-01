@@ -36,7 +36,8 @@ article.post-single .entry blockquote p{
   @include inner_line_color($staff_color);
 
   img {
-    max-height: 248px;
+    height: 248px;
+    width: 292px;
   }
 
   &:hover{
