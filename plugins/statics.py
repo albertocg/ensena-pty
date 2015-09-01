@@ -16,6 +16,14 @@ SOCIAL_LINKS = [
     {'icon':'fa-instagram', 'url':'https://instagram.com/ensenaxpanama/'},
 ]
 
+SLIDER_IMAGE_LIST = [
+    'assets/images/slider/Drobis_01.JPG',
+    'assets/images/slider/Drobis_02.JPG',
+    'assets/images/slider/Drobis_03.JPG',
+    'assets/images/slider/Drobis_04.JPG',
+    'assets/images/slider/Drobis_05.JPG'
+]
+
 HEADER_BACKGROUND = "assets/images/header-bg.jpg"
 
 CONTACT_EMAIL = "info@ensenaporpanama.com"
@@ -29,6 +37,7 @@ def preBuildPage(site, page, context, data):
         PAGE_LINKS[:len(PAGE_LINKS)/2],
         PAGE_LINKS[len(PAGE_LINKS)/2:],
     ]
+    context['slider_image_list'] = SLIDER_IMAGE_LIST
     context['social_links'] = SOCIAL_LINKS
     context['contact_email'] = CONTACT_EMAIL
     context['contact_phone'] = CONTACT_PHONE
