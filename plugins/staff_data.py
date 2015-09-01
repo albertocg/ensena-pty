@@ -76,5 +76,17 @@ STAFF_DATA = [
 
 
 def preBuildPage(site, page, context, data):
-    context['staff_data'] = STAFF_DATA
+
+    def generate_alt_class(index, item):
+        if (index % 4)  > 1:
+            item['extra_classes'] = 'staff-item-alt'
+        return item
+
+    # Iterates through the entire STAFF_DATA list, and adds extra classes if necessary
+    context['staff_data'] = map(
+        generate_alt_class,
+        range(len(STAFF_DATA)),
+        STAFF_DATA
+    )
+    
     return context, data

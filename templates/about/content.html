@@ -12,7 +12,7 @@
 
 				<ul class="staff-items large-block-grid-2">
 					{% for staff_item in staff_data %}
-						<li class="staff-item">
+						<li class="staff-item {{ staff_item.extra_classes }}">
 
 							<div class="staff-item-image">
 								<img src="{% static staff_item.photo %}" height="248" width="285" alt="" itemprop="image">
