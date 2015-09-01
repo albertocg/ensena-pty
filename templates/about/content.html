@@ -1,10 +1,62 @@
 <div class="main-body">
+
+	<section class="section-staff">
+		<div class="row">
+			<div class="columns small-12" >
+
+				<header class="section-head">
+					<h1 class="section-title">
+						Nuestro equipo
+					</h1>
+				</header>
+
+				<ul class="staff-items large-block-grid-2">
+					{% for staff_item in staff_data %}
+						<li class="staff-item">
+
+							<div class="staff-item-image">
+								<img src="{% static staff_item.photo %}" height="248" width="285" alt="" itemprop="image">
+							</div>
+
+							<div class="staff-item-content">
+								<div class="staff-item-content-inner">
+									<h4 itemprop="image">{{ staff_item.name }}</h4>
+									<p>{{ staff_item.tagline }}</p>
+									<div class="staff-item-actions">
+										<ul>
+											{% for social_link in staff_item.social_links %}
+												<li>
+													<a href="{{ social_link.url }}" target="_blank">
+														<i class="fa {{ social_link.icon }}"></i>
+													</a>
+												</li>
+											{% endfor %}
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</li>
+					{% endfor %}
+				</ul>
+
+			</div>
+		</div>
+	</section>
+
+
 	<div class="row" data-equalizer="" data-equalizer-mq="large-up">
 		<div class="column small-12">
 	    <div class="content">
 	      <article class="post post-single">
 	        <div class="post-body">
 	          <div class="entry" itemprop="articleBody">
+
+							<header class="section-head">
+								<h1 class="section-title">
+									Acerca de nosotros
+								</h1>
+							</header>
 	            <p>Enseña por Panamá busca colaborar a resolver el problema educativo de Panamá atacando sus causas de raíz y así iniciar un movimiento para transformar los salones de clase, las comunidades y, eventualmente, el sistema educativo y las perspectivas sociales.</p>
 	            <ul class="post-items medium-block-grid-3">
 								<li>
@@ -43,12 +95,12 @@
 	            <div class="row">
 
 	              <div class="columns medium-4">
-	                <img src="{% static 'assets/images/lorena_valencia.jpg'%}" class="center th" />
+	                <img src="{% static staff_data.0.photo %}" class="center th" />
 	              </div>
 
 	              <div class="columns medium-8">
-	                <h4>Lorena Valencia</h4>
-	                <strong>Directora Ejecutiva y Co-Fundadora</strong>
+	                <h4>{{ staff_data.0.name }}</h4>
+	                <strong>{{ staff_data.0.tagline }}</strong>
 	                <blockquote class="red">
 	                  <p>Creo fuertemente que la única manera de disminuir la brecha de desigualdades en Panamá es por medio de la educación; En Enseña por Panamá estamos llevando al talento nacional que se iría el sector privado al sector publico educativo; esperamos tener un gran impacto</p>
 	                </blockquote>
@@ -63,12 +115,12 @@
 
 	            <div class="row">
 	              <div class="columns medium-4">
-	                <img src="{% static 'assets/images/david_bernal.jpg'%}" class="center th" />
+	                <img src="{% static staff_data.1.photo %}" class="center th" />
 	              </div>
 
 	              <div class="columns medium-8">
-	                <h4>David Alexander Bernal Díaz</h4>
-	                <strong>Director de Reclutamiento, Selección y Colocación</string>
+	                <h4>{{ staff_data.1.name }}</h4>
+	                <strong>{{ staff_data.1.tagline }}</strong>
 	                <blockquote class="red">
 										<p>Si me tocará resumir lo que significa ser parte de Enseña Por Panamá, bastarían 4 palabras...¡Amar lo que haces!.</p>
 									</blockquote>
@@ -81,12 +133,12 @@
 
 	            <div class="row">
 	              <div class="columns medium-4">
-	                <img src="{% static 'assets/images/dan_mckee.jpg'%}" class="center th" />
+	                <img src="{% static staff_data.2.photo %}" class="center th" />
 	              </div>
 
 	              <div class="columns medium-8">
-	                <h4>Daniel McKee</h4>
-	                <strong>Director de Formación y Apoyo</strong>
+	                <h4>{{ staff_data.2.name }}</h4>
+	                <strong>{{ staff_data.2.tagline }}</strong>
 	                <p>Daniel McKee asistió a la Universidad de Brown, antes de iniciar una larga carrera en la educación. Inicia enseñado en escuelas del centro urbano en California. Luego convirtió en un voluntario del Cuerpo de Paz en Paraguay, donde ayudo a formar maestros jóvenes en la Escuela de Maestrías Regional que estaban embarcando en sus propias carreras en las escuelas rurales.</p>
 	                <p>Luego pasó a enseñar estudios sociales y artes del lenguaje en las escuelas públicas de la Ciudad de Nueva York durante 10 años, obteniendo una Maestría en Educación Bilingüe en  Universidad de Columbia (Teachers College) y más tarde una credencial post-maestría en Administración y Supervisión Escolar.</p>
 	                <p>Después de más de una década en la ciudad de Nueva York, Daniel se embarcó en una próxima década en las escuelas International. Daniel trabajó como profesor y director de la escuela en Guatemala, Tailandia y España, antes de llegar a Panamá en 2008 como el director de la escuela de la Escuela Internacional de Panamá, donde trabajo por seis años.</p>
@@ -98,12 +150,12 @@
 
 	            <div class="row">
 	              <div class="columns medium-4">
-	                <img src="{% static 'assets/images/julio_german.jpg'%}" class="center th" />
+	                <img src="{% static staff_data.3.photo %}" class="center th" />
 	              </div>
 
 	              <div class="columns medium-8">
-	                <h4>Julio Germán Arias Castillo</h4>
-	                <strong>Director de Relaciones Públicas Internacionales</strong>
+	                <h4>{{ staff_data.3.name }}</h4>
+	                <strong>{{ staff_data.3.tagline }}</strong>
 									<p>Julio Germán Arias Castillo, Director de Relaciones Públicas Internacionales de Enseña por Panamá, trabaja en Morgan Stanley en la ciudad de Nueva York. Anteriormente, ha realizado pasantías en Citigroup y Deloitte en Panamá, Opus Investimentos en Brasil, y el grupo de emisión de deuda soberana y corporativa latinoamericana de Morgan Stanley (donde fue premiado con la beca al mérito Richard B. Fisher). Actualmente es miembro de la Junta Directiva de Young Professionals of the Americas, una iniciativa de la organización hemisférica Americas Society/Council of the Americas.</p>
 									<p>Julio Germán es Licenciado en Economía por The Wharton School y Licenciado en Estudios Internacionales por el College of Arts and Sciences de la Universidad de Pennsylvania (miembro del Programa Huntsman). Durante su carrera universitaria, formó parte de las Juntas Directivas de Wharton Latino, el Wharton Business Law Association, y el Comité Asesor de Estudiantes Internacionales. Además, fue electo Senador de Wharton ante la Asamblea Estudiantil, y seleccionado como Maestro de Ceremonias del Wharton Global Forum 2014. Al graduarse, fue galardonado con el 2014 Alumni Student Award of Merit. </p>
 									<p>Nacido y criado en Panamá, Julio Germán ha representado al país en destacados foros internacionales, tales como la Conferencia TUNZA 2009 (organizada por el Programa de las Naciones Unidas para el Medio Ambiente) y Vanguardia Iberoamericana 2013 (auspiciada por la OEA, UNESCO y el BID en el marco de la XXIII Cumbre Iberoamericana de Jefes de Estado).</p>
@@ -118,11 +170,12 @@
 
 							<div class="row">
 	              <div class="columns medium-4">
-	                <img src="https://placehold.it/600x600" class="center th" />
+	                <img src="{% static staff_data.4.photo %}" class="center th" />
 	              </div>
 
 	              <div class="columns medium-8">
-	                <h4>Marisa Arias</h4>
+	                <h4>{{ staff_data.4.name }}</h4>
+	                <strong>{{ staff_data.4.tagline }}</strong>
 	                <p>Daniel McKee asistió a la Universidad de Brown, antes de iniciar una larga carrera en la educación. Inicia enseñado en escuelas del centro urbano en California. Luego convirtió en un voluntario del Cuerpo de Paz en Paraguay, donde ayudo a formar maestros jóvenes en la Escuela de Maestrías Regional que estaban embarcando en sus propias carreras en las escuelas rurales.</p>
 	                <p>Luego pasó a enseñar estudios sociales y artes del lenguaje en las escuelas públicas de la Ciudad de Nueva York durante 10 años, obteniendo una Maestría en Educación Bilingüe en  Universidad de Columbia (Teachers College) y más tarde una credencial post-maestría en Administración y Supervisión Escolar.</p>
 	                <p>Después de más de una década en la ciudad de Nueva York, Daniel se embarcó en una próxima década en las escuelas International. Daniel trabajó como profesor y director de la escuela en Guatemala, Tailandia y España, antes de llegar a Panamá en 2008 como el director de la escuela de la Escuela Internacional de Panamá, donde trabajo por seis años.</p>
@@ -134,11 +187,12 @@
 
 							<div class="row">
 	              <div class="columns medium-4">
-	                <img src="{% static 'assets/images/jorge_arosemena.jpg'%}" class="center th" />
+	                <img src="{% static staff_data.5.photo %}" class="center th" />
 	              </div>
 
 	              <div class="columns medium-8">
-	                <h4>Jorge Arosemena</h4>
+	                <h4>{{ staff_data.5.name }}</h4>
+	                <strong>{{ staff_data.5.tagline }}</strong>
 									<p>Sociólogo panameño. Casado, cuatro hijos.  Hizo estudios de Ingeniería Civil en la Universidad de Panamá (1961-64).  Obtuvo una Licenciatura Clásica en Filosofía (1969) y una Maestría en Sociología (1971), ambas en Saint Louis University, Estados Unidos.</p>
 									<p>Profesor Titular de Sociología en la Universidad de Panamá donde ha ejercido la docencia universitaria desde 1971, entidad en la cual ocupó las posiciones de  Secretario General y Vicerrector Académico.</p>
 									<p>En el sector público ha ocupado los cargos de Gerente General del Instituto Panameño de Turismo, Viceministro de la Presidencia, Viceministro y Ministro de Educación.  </p>
@@ -155,11 +209,12 @@
 
 							<div class="row">
 	              <div class="columns medium-4">
-	                <img src="{% static 'assets/images/julio_escobar.jpg'%}" class="center th" />
+	                <img src="{% static staff_data.6.photo %}" class="center th" />
 	              </div>
 
 	              <div class="columns medium-8">
-	                <h4>Julio Escobar Villarué</h4>
+	                <h4>{{ staff_data.6.name }}</h4>
+	                <strong>{{ staff_data.6.tagline }}</strong>
 									<p>Es Presidente y Ejecutivo Principal (CEO) de Centauri Technologies Corporation, empresa dedicada a apoyar la evolución tecnológica de corporaciones y organizaciones que desean fortalecer su competitividad y capacidad de innovar. </p>
 									<p>Julio Escobar fue científico y gerente de investigación del Grupo de Investigaciones Avanzadas de Internet en la empresa BBN, de los Estados Unidos de América; la empresa que implementó la primera versión de lo que ahora se conoce como el Internet. Allí desarrolló protocolos, algoritmos, arquitecturas y sistemas para redes de comunicación inalámbrica, supervivencia de redes, cómputo distribuido, comunicación multimedios, seguridad de datos y otras áreas de alta tecnología. El Dr. Escobar ha sido evaluador y miembro de comités asesores de la Fundación Nacional de Ciencias y de la Agencia de Proyectos Avanzados de Defensa (DARPA) de los Estados Unidos de América, es miembro senior del Instituto de Ingenieros Electricos y Electrónicos (IEEE), miembro de la Asociación de Máquinas de Computación, y ha sido miembro del consejo editorial de las revistas científicas IEEE Networks y del Journal of Fiber and Integrated Optics. </p>
 									<p>En Centauri Technologies, dirigió el diseñó e implementación de la infraestructura de seguridad de la red de cajeros automáticos Telered de Panamá y la infraestructura de seguridad para las elecciones nacionales. Ha supervisado o dirigido proyectos de diseño o implementación de sistemas de redes inalámbricas, arquitectura de servicios, tecnología semántica, desarrollo de aplicaciones e investigación y desarrollo. </p>
