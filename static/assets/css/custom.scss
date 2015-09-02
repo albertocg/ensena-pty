@@ -20,6 +20,16 @@ article.post-single .entry blockquote p{
   max-width: 350px;
 }
 
+//Teach For All - Banner
+.callout.tfa-banner{
+  background-color: $color-red;
+
+  //Hardcoded image size
+  .columns img{
+      height: 30px;
+  }
+}
+
 /*
  About us page
 */
