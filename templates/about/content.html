@@ -11,6 +11,8 @@
 				</header>
 
 				<ul class="staff-items large-block-grid-2">
+
+					{#  staff_data is defined in plugins/staff_data.py #}
 					{% for staff_item in staff_data %}
 						<li class="staff-item {{ staff_item.extra_classes }}">
 

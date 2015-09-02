@@ -74,19 +74,22 @@ STAFF_DATA = [
     },
 ]
 
-
 def preBuildPage(site, page, context, data):
 
+    # Adds an extra CSS class to every third and fourth element in an array
     def generate_alt_class(index, item):
         if (index % 4)  > 1:
             item['extra_classes'] = 'staff-item-alt'
         return item
 
-    # Iterates through the entire STAFF_DATA list, and adds extra classes if necessary
-    context['staff_data'] = map(
+    # Iterates through the entire STAFF_DATA list, and executes the 'generate_alt_class' function
+    parsed_data =  map(
         generate_alt_class,
         range(len(STAFF_DATA)),
         STAFF_DATA
     )
-    
+
+    # Pass the data to the template
+    context['staff_data'] = parsed_data
+
     return context, data
