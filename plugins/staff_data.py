@@ -6,85 +6,54 @@ STAFF_DATA = [
         'name': 'Lorena Valencia',
         'photo': 'assets/images/staff/lorena_valencia.jpg' ,
         'tagline': 'Directora Ejecutiva y Co-Fundadora',
-        'social_links': [
-            {'icon': 'fa-facebook', 'url': "#"},
-            {'icon': 'fa-twitter', 'url': "#"},
-            {'icon': 'fa-linkedin', 'url': "#"}
-        ]
     },
     {
         'name': 'David Alexander Bernal Díaz',
         'photo': 'assets/images/staff/david_bernal.jpg',
         'tagline': 'Director de Reclutamiento, Selección y Colocación',
-        'social_links': [
-            {'icon': 'fa-facebook', 'url': "#"},
-            {'icon': 'fa-twitter', 'url': "#"},
-            {'icon': 'fa-linkedin', 'url': "#"}
-        ]
     },
     {
         'name': 'Daniel McKee',
         'photo': 'assets/images/staff/dan_mckee.jpg',
         'tagline': 'Director de Formación y Apoyo',
-        'social_links': [
-            {'icon': 'fa-facebook', 'url': "#"},
-            {'icon': 'fa-twitter', 'url': "#"},
-            {'icon': 'fa-linkedin', 'url': "#"}
-        ]
     },
     {
         'name': 'Julio Germán Arias Castillo',
         'photo': 'assets/images/staff/julio_german.jpg',
         'tagline': 'Director de Relaciones Públicas Internacionales',
-        'social_links': [
-            {'icon': 'fa-facebook', 'url': "#"},
-            {'icon': 'fa-twitter', 'url': "#"},
-            {'icon': 'fa-linkedin', 'url': "#"}
-        ]
     },
     {
         'name': 'Marisa Arias',
         'photo': 'assets/images/staff/david_bernal.jpg',
         'tagline': 'Directora',
-        'social_links': [
-            {'icon': 'fa-facebook', 'url': "#"},
-            {'icon': 'fa-twitter', 'url': "#"},
-            {'icon': 'fa-linkedin', 'url': "#"}
-        ]
     },
     {
         'name': 'Jorge Arosemena',
         'photo': 'assets/images/staff/jorge_arosemena.jpg',
         'tagline': 'Director',
-        'social_links': [
-            {'icon': 'fa-facebook', 'url': "#"},
-            {'icon': 'fa-twitter', 'url': "#"},
-            {'icon': 'fa-linkedin', 'url': "#"}
-        ]
     },
     {
         'name': 'Julio Escobar Villarué',
         'photo': 'assets/images/staff/julio_escobar.jpg',
         'tagline': 'Asesor',
-        'social_links': [
-            {'icon': 'fa-facebook', 'url': "#"},
-            {'icon': 'fa-twitter', 'url': "#"},
-            {'icon': 'fa-linkedin', 'url': "#"}
-        ]
     },
 ]
 
+# Adds extra attributes programatically to the staff items.
+def parse_staff_data(index, item):
+
+    #Adds a link-able ID to the object, used for anchors
+    item['link'] = item['name'].lower().replace(" ", "")
+
+    # Return the item
+    return item
+
+# Executed before the page is built
 def preBuildPage(site, page, context, data):
 
-    # Adds an extra CSS class to every third and fourth element in an array
-    def generate_alt_class(index, item):
-        if (index % 4)  > 1:
-            item['extra_classes'] = 'staff-item-alt'
-        return item
-
-    # Iterates through the entire STAFF_DATA list, and executes the 'generate_alt_class' function
+    # Iterates through the entire STAFF_DATA list, and executes the 'parse_staff_data' function
     parsed_data =  map(
-        generate_alt_class,
+        parse_staff_data,
         range(len(STAFF_DATA)),
         STAFF_DATA
     )

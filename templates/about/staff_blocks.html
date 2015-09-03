@@ -1,0 +1,26 @@
+<ul class="staff-items large-block-grid-2">
+
+  {#  staff_data is defined in plugins/staff_data.py #}
+  {% for staff_item in staff_data %}
+    <li class="{% cycle 'staff-item' 'staff-item' 'staff-item staff-item-alt' 'staff-item staff-item-alt' %}">
+      <div class="staff-item-image">
+        <img src="{% static staff_item.photo %}" height="248" width="285" alt="" itemprop="image">
+      </div>
+
+      <div class="staff-item-content">
+        <div class="staff-item-content-inner">
+          <h4 itemprop="image">{{ staff_item.name }}</h4>
+          <p>{{ staff_item.tagline }}</p>
+          <div class="staff-item-actions">
+            <ul>
+              <li>
+                <a href="#{{ staff_item.link }}"><i class="fa fa-user"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+
+</ul>

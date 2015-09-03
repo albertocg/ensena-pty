@@ -9,38 +9,8 @@
 						Nuestro equipo
 					</h1>
 				</header>
-
-				<ul class="staff-items large-block-grid-2">
-
-					{#  staff_data is defined in plugins/staff_data.py #}
-					{% for staff_item in staff_data %}
-						<li class="staff-item {{ staff_item.extra_classes }}">
-
-							<div class="staff-item-image">
-								<img src="{% static staff_item.photo %}" height="248" width="285" alt="" itemprop="image">
-							</div>
-
-							<div class="staff-item-content">
-								<div class="staff-item-content-inner">
-									<h4 itemprop="image">{{ staff_item.name }}</h4>
-									<p>{{ staff_item.tagline }}</p>
-									<div class="staff-item-actions">
-										<ul>
-											{% for social_link in staff_item.social_links %}
-												<li>
-													<a href="{{ social_link.url }}" target="_blank">
-														<i class="fa {{ social_link.icon }}"></i>
-													</a>
-												</li>
-											{% endfor %}
-										</ul>
-									</div>
-								</div>
-							</div>
-
-						</li>
-					{% endfor %}
-				</ul>
+				
+				{% include "about/staff_blocks.html" %}
 
 			</div>
 		</div>
@@ -94,7 +64,9 @@
 
 							<div class="row space-1"></div>
 
+							{# Lorena Valencia #}
 	            <div class="row">
+								<a name="{{ staff_data.0.link }}"></a>
 
 	              <div class="columns medium-4">
 	                <img src="{% static staff_data.0.photo %}" class="center th" />
@@ -115,7 +87,10 @@
 
 	            <div class="row space-1"></div>
 
+							{# David Bernal #}
 	            <div class="row">
+								<a name="{{ staff_data.1.link }}"></a>
+
 	              <div class="columns medium-4">
 	                <img src="{% static staff_data.1.photo %}" class="center th" />
 	              </div>
@@ -133,7 +108,10 @@
 
 	            <div class="row space-1"></div>
 
+							{# Daniel McKee #}
 	            <div class="row">
+								<a name="{{ staff_data.2.link }}"></a>
+
 	              <div class="columns medium-4">
 	                <img src="{% static staff_data.2.photo %}" class="center th" />
 	              </div>
@@ -150,7 +128,10 @@
 
 							<div class="row space-1"></div>
 
+							{# Julio Arias #}
 	            <div class="row">
+								<a name="{{ staff_data.3.link }}"></a>
+
 	              <div class="columns medium-4">
 	                <img src="{% static staff_data.3.photo %}" class="center th" />
 	              </div>
@@ -170,7 +151,10 @@
 
 							<div class="row space-1"></div>
 
-							<div class="row">
+							{# Marisa Arias #}
+	            <div class="row">
+								<a name="{{ staff_data.4.link }}"></a>
+
 	              <div class="columns medium-4">
 	                <img src="{% static staff_data.4.photo %}" class="center th" />
 	              </div>
@@ -187,7 +171,10 @@
 
 							<div class="row space-1"></div>
 
-							<div class="row">
+							{# Jorge Arosemena #}
+	            <div class="row">
+								<a name="{{ staff_data.5.link }}"></a>
+
 	              <div class="columns medium-4">
 	                <img src="{% static staff_data.5.photo %}" class="center th" />
 	              </div>
@@ -209,7 +196,10 @@
 
 							<div class="row space-1"></div>
 
-							<div class="row">
+							{# Julio Escobar #}
+	            <div class="row">
+								<a name="{{ staff_data.6.link }}"></a>
+
 	              <div class="columns medium-4">
 	                <img src="{% static staff_data.6.photo %}" class="center th" />
 	              </div>
