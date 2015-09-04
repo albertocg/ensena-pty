@@ -24,7 +24,7 @@ STAFF_DATA = [
     },
     {
         'name': 'Marisa Arias',
-        'photo': 'assets/images/staff/david_bernal.jpg',
+        'photo': 'assets/images/staff/marisa_arias.jpg',
         'tagline': 'Directora',
     },
     {
