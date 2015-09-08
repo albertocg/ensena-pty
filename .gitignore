@@ -59,6 +59,3 @@ target/
 
 # Cactus S3 config
 config.json
-
-# Post-processed CSS
-/static/assets/css/custom.css

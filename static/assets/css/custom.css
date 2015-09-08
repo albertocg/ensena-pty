@@ -1,0 +1,36 @@
+.row.space-1 {
+  padding: 1rem; }
+
+  article.post-single .entry blockquote p {
+    border-left: 3px solid #d22630; }
+
+    .footer-section img {
+      max-width: 350px; }
+
+      .callout.tfa-banner {
+        background-color: #d22630; }
+        .callout.tfa-banner .columns img {
+          height: 30px; }
+
+ul.staff-items li.staff-item:nth-child(even) .staff-item-content .staff-item-actions::before {
+  background: #d22630 none repeat scroll 0% 0%; }
+  ul.staff-items li.staff-item:nth-child(even) img {
+    height: 248px;
+    width: 292px; }
+    ul.staff-items li.staff-item:nth-child(even):hover {
+      background-color: #d22630; }
+      ul.staff-items li.staff-item:nth-child(even):hover .staff-item-content .staff-item-actions::before {
+        background: #ffffff none repeat scroll 0% 0%; }
+        ul.staff-items li.staff-item:nth-child(even):hover .staff-item-image::after {
+          border-color: transparent #d22630; }
+ul.staff-items li.staff-item:nth-child(odd) .staff-item-content .staff-item-actions::before {
+  background: #298FC2 none repeat scroll 0% 0%; }
+  ul.staff-items li.staff-item:nth-child(odd) img {
+    height: 248px;
+    width: 292px; }
+    ul.staff-items li.staff-item:nth-child(odd):hover {
+      background-color: #298FC2; }
+      ul.staff-items li.staff-item:nth-child(odd):hover .staff-item-content .staff-item-actions::before {
+        background: #ffffff none repeat scroll 0% 0%; }
+        ul.staff-items li.staff-item:nth-child(odd):hover .staff-item-image::after {
+          border-color: transparent #298FC2; }
