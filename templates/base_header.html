@@ -11,9 +11,13 @@
 
         <nav class="nav">
           <ul>
-            {% for link_item in header_links %}
-              <li><a href="{{ link_item.url }}">{{ link_item.title }}</a></li>
-            {% endfor %}
+
+              <li><a href="{% url '/index.html' %}">Inicio</a></li>
+              <li><a href="{% url '/about.html' %}">Nosotros</a></li>
+              <li><a href="{% url '/challenge.html' %}">El Desafio</a></li>
+              <li><a href="{% url '/leadership.html' %}">Programa de Liderazgo</a></li>
+              <li><a href="{% url '/alumni.html' %}">Alumni</a></li>
+              <li><a href="{% url '/allies.html' %}">Aliados</a></li>
           </ul>
         </nav><!-- /.nav -->
 

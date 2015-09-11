@@ -28,14 +28,17 @@
           <h4 class="footer-section-title">Website</h4><!-- /.footer-section-title -->
 
           <div class="footer-section-body">
-
-            {% for sublist in footer_links %}
               <ul class="list-links">
-                {% for item in sublist %}
-                  <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-                {% endfor %}
+                  <li><a href="{% url '/index.html' %}">Inicio</a></li>
+                  <li><a href="{% url '/about.html' %}">Nosotros</a></li>
+                  <li><a href="{% url '/challenge.html' %}">El Desafio</a></li>
               </ul>
-            {% endfor %}
+               <ul class="list-links">
+
+                  <li><a href="{% url '/leadership.html' %}">Programa de Liderazgo</a></li>
+                  <li><a href="{% url '/alumni.html' %}">Alumni</a></li>
+                  <li><a href="{% url '/allies.html' %}">Aliados</a></li>
+              </ul>
 
           </div><!-- /.footer-section-body -->
         </div><!-- /.footer-section -->

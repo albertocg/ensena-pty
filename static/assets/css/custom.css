@@ -34,3 +34,26 @@ ul.staff-items li.staff-item:nth-child(odd) .staff-item-content .staff-item-acti
         background: #ffffff none repeat scroll 0% 0%; }
         ul.staff-items li.staff-item:nth-child(odd):hover .staff-item-image::after {
           border-color: transparent #298FC2; }
+
+.circle{
+    border-radius:50%;
+}
+.mb-45{
+    margin-bottom: 45px!important;
+}
+li.full-width {
+    width: 100%;
+}
+span.number-circle {
+    background-color: #298FC2;
+    color: #fff;
+    /* height: 60px; */
+    /* width: 60px; */
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-right: 15px;
+    font-weight: 900;
+}
+
+
