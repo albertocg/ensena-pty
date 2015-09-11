@@ -88,5 +88,25 @@ h4.image-title span{
     color:#298EC2;
     font-weight: 700;
 }
+.download-link{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-left: 10px;
+}
+.download-title{
+}
+.download-title {
+    background-color: #388FBE;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+a.download-link:hover {
+    color: #D23730;
+}
 
 
