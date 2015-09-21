@@ -22,11 +22,11 @@ STAFF_DATA = [
         'photo': 'assets/images/staff/julio_german.jpg',
         'tagline': 'Director de Relaciones Públicas Internacionales',
     },
-#    {
-#        'name': 'Marisa Arias',
-#        'photo': 'assets/images/staff/marisa_arias.jpg',
-#        'tagline': 'Directora',
-#    },
+    {
+        'name': 'Marisa Arias',
+        'photo': 'assets/images/staff/marisa_arias.jpg',
+        'tagline': 'Directora',
+    },
     {
         'name': 'Jorge Arosemena',
         'photo': 'assets/images/staff/jorge_arosemena.jpg',
