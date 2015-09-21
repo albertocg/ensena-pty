@@ -34,7 +34,13 @@
                 </ul>
               </li>
               <li><a href="{% url '/alumni.html' %}">Alumni</a></li>
-              <li><a href="{% url '/allies.html' %}">Aliados</a></li>
+              <li><a href="{% url '/allies.html' %}">Aliados</a>
+                <ul>
+                  <li><a href="{% url '/allies.html' %}#corporativos">Aliados Corporativos</a></li>
+                  <li><a href="{% url '/allies.html' %}#institucionales">Aliados Institucionales</a></li>
+                  <li><a href="{% url '/allies.html' %}#individuales">Aliados Individuales</a></li>
+                </ul>
+              </li>
           </ul>
         </nav><!-- /.nav -->
 
