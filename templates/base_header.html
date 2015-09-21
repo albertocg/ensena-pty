@@ -13,9 +13,26 @@
           <ul>
 
               <li><a href="{% url '/index.html' %}">Inicio</a></li>
-              <li><a href="{% url '/about.html' %}">Nosotros</a></li>
-              <li><a href="{% url '/challenge.html' %}">El Desafio</a></li>
-              <li><a href="{% url '/leadership.html' %}">Programa de Liderazgo</a></li>
+              <li><a href="{% url '/about.html' %}">Nosotros</a>
+                <ul>
+                  <li><a href="{% url '/about.html' %}#staff">Nuestro equipo</a></li>
+                  <li><a href="{% url '/about.html' %}#teachforall">Red Teach for All</a></li>
+                </ul>
+              </li>
+              <li><a href="{% url '/challenge.html' %}">El Desafío</a>
+                <ul>
+                  <li><a href="{% url '/challenge.html' %}#quesucede">¿Qué Sucede?</a></li>
+                  <li><a href="{% url '/challenge.html' %}#infografia">Infografía</a></li>
+                </ul>
+              </li>
+              <li><a href="{% url '/leadership.html' %}">Programa de Liderazgo</a>
+                <ul>
+                  <li><a href="{% url '/leadership.html' %}#buscamos">¿A quién Buscamos?</a></li>
+                  <li><a href="{% url '/leadership.html' %}#preparacion">Preparación</a></li>
+                  <li><a href="{% url '/leadership.html' %}#beneficios">¿Cómo te beneficias?</a></li>
+                  <li><a href="{% url '/leadership.html' %}#mapa">¿Dónde Estamos?</a></li>
+                </ul>
+              </li>
               <li><a href="{% url '/alumni.html' %}">Alumni</a></li>
               <li><a href="{% url '/allies.html' %}">Aliados</a></li>
           </ul>
