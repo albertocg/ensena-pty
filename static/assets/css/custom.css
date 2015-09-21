@@ -16,7 +16,12 @@ ul.staff-items li.staff-item:nth-child(even) .staff-item-content .staff-item-act
   background: #d22630 none repeat scroll 0% 0%; }
   ul.staff-items li.staff-item:nth-child(even) img {
     height: 248px;
-    width: 292px; }
+    width: 292px;
+    -webkit-filter: sepia(1);
+    filter: sepia(1);}
+    .gray {
+    -webkit-filter: sepia(1);
+    filter: sepia(1);}
     ul.staff-items li.staff-item:nth-child(even):hover {
       background-color: #d22630; }
       ul.staff-items li.staff-item:nth-child(even):hover .staff-item-content .staff-item-actions::before {
@@ -27,7 +32,9 @@ ul.staff-items li.staff-item:nth-child(odd) .staff-item-content .staff-item-acti
   background: #298FC2 none repeat scroll 0% 0%; }
   ul.staff-items li.staff-item:nth-child(odd) img {
     height: 248px;
-    width: 292px; }
+    width: 292px;
+    -webkit-filter: sepia(1);
+    filter: sepia(1);}
     ul.staff-items li.staff-item:nth-child(odd):hover {
       background-color: #298FC2; }
       ul.staff-items li.staff-item:nth-child(odd):hover .staff-item-content .staff-item-actions::before {
