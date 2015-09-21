@@ -11505,7 +11505,7 @@ Copyright (c) 2015 Daniel Eden
         width: 240px;
         margin: 0;
         padding: 26px 0 30px;
-        background: #27262c;
+        background: #ffffff;
         visibility: hidden;
         opacity: 0; }
         .nav > ul > li > ul {
@@ -11517,7 +11517,7 @@ Copyright (c) 2015 Daniel Eden
         .nav > ul > li > ul > li > a {
           display: block;
           padding: 4px 28px;
-          color: #fff;
+          color: #000;
           border-right: 3px solid transparent; }
         .nav > ul > li > ul > li > a {
           -webkit-transition: border 0.2s ease-out;
