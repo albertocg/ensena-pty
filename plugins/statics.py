@@ -18,14 +18,17 @@ SOCIAL_LINKS = [
 
 SLIDER_IMAGE_LIST = [
     {
+        'image':'assets/images/slider/slider_0.jpg',
+        'title':'APLICACIONES ABIERTAS para la primera cohorte de Profesionales de Enseña por Panamá. ¡APLICA YA!'
+    },{
         'image':'assets/images/slider/Drobis_01.JPG',
         'title':'Puedes hacerlo realidad'
     },{
         'image':'assets/images/slider/Drobis_02.JPG',
-        'title':'APLICACIONES ABIERTAS para la primera cohorte de Profesionales de Enseña por Panamá. ¡APLICA YA!'
+        'title':'¡Sé parte de un movimiento internacional!'
     },{
         'image':'assets/images/slider/Drobis_03.JPG',
-        'title':'¡Se parte de un movimiento internacional!'
+        'title':'¡APLICACIONES ABIERTAS para la primera cohorte de Profesionales de Enseña por Panamá. ¡APLICA YA!'
     },{
         'image':'assets/images/slider/Drobis_04.JPG',
         'title':'Un día todos los niños, las niñas y jóvenes de Panamá tendrán la oportunidad de recibir una educación de excelencia'
