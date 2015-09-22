@@ -6,13 +6,13 @@
         {% for slider_image in slider_image_list %}
           <li class="slide">
   					<div class="slide-image fullscreener">
-  						<img src="{% static slider_image %}" height="890" width="1800" alt="">
+  						<img src="{% static slider_image.image %}" height="890" width="1800" alt="">
   					</div><!-- /.slide-image -->
 
   					<div class="slide-content">
   						<div class="row">
   							<div class="columns large-7">
-  								<h2 class="slide-title">Puedes hacerlo realidad</h2><!-- /.slide-title -->
+  								<h2 class="slide-title">{{ slider_image.title }}</h2><!-- /.slide-title -->
 
   								<div class="slide-entry">
   									<p>¡Aplica al <b>programa de liderazgo!</b> Tú eres parte del cambio y puedes ayudar a lograr una educación de calidad a todos los niños y jovenes en Panamá</p>

@@ -17,11 +17,22 @@ SOCIAL_LINKS = [
 ]
 
 SLIDER_IMAGE_LIST = [
-    'assets/images/slider/Drobis_01.JPG',
-    'assets/images/slider/Drobis_02.JPG',
-    'assets/images/slider/Drobis_03.JPG',
-    'assets/images/slider/Drobis_04.JPG',
-    'assets/images/slider/Drobis_05.JPG'
+    {
+        'image':'assets/images/slider/Drobis_01.JPG',
+        'title':'Puedes hacerlo realidad'
+    },{
+        'image':'assets/images/slider/Drobis_02.JPG',
+        'title':'APLICACIONES ABIERTAS para la primera cohorte de Profesionales de Enseña por Panamá. ¡APLICA YA!'
+    },{
+        'image':'assets/images/slider/Drobis_03.JPG',
+        'title':'¡Se parte de un movimiento internacional!'
+    },{
+        'image':'assets/images/slider/Drobis_04.JPG',
+        'title':'Un día todos los niños, las niñas y jóvenes de Panamá tendrán la oportunidad de recibir una educación de excelencia'
+    },{
+        'image':'assets/images/slider/Drobis_05.JPG',
+        'title':'¿Sabías que el 80% de los estudiantes de tercer grado no saben leer? Unete y se parte del cambio!'
+    }
 ]
 
 HEADER_BACKGROUND = "assets/images/header-bg.jpg"
