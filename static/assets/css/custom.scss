@@ -1,6 +1,6 @@
 // Variables
 
-$color-red: #d22630;
+$color-red: #CF4755;
 $color-blue: #298FC2;
 $color-white: #ffffff;
 
@@ -76,5 +76,3 @@ ul.staff-items li.staff-item{
     @include staff_item_background($color-blue);
   }
 }
-
-
