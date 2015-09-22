@@ -16,22 +16,26 @@ SOCIAL_LINKS = [
     {'icon':'fa-instagram', 'url':'https://instagram.com/ensenaxpanama/'},
 ]
 
+# Each slider imgae has a url and a title. Subtitle is optional.
 SLIDER_IMAGE_LIST = [
     {
         'image':'assets/images/slider/slider_0.jpg',
-        'title':'APLICACIONES ABIERTAS para la primera cohorte de Profesionales de Enseña por Panamá. ¡APLICA YA!'
+        'title':'¡APLICACIONES ABIERTAS para la primera cohorte de Profesionales de Enseña por Panamá!. ¡APLICA YA!'
     },{
         'image':'assets/images/slider/Drobis_01.JPG',
-        'title':'Puedes hacerlo realidad'
+        'title':'Puedes hacerlo realidad',
+        'subtitle':'<p>¡Aplica al <b>programa de liderazgo!</b> Tú eres parte del cambio y puedes ayudar a lograr una educación de calidad a todos los niños y jovenes en Panamá</p>'
     },{
         'image':'assets/images/slider/Drobis_02.JPG',
-        'title':'¡Sé parte de un movimiento internacional!'
+        'title':'¡Sé parte de un movimiento internacional!',
+        'subtitle':'<a href="http://teachforall.org/en/our-network-and-impact/network-partners" target="_blank"><p>Red TEACH FOR ALL</p></a>'
     },{
         'image':'assets/images/slider/Drobis_03.JPG',
-        'title':'¡APLICACIONES ABIERTAS para la primera cohorte de Profesionales de Enseña por Panamá. ¡APLICA YA!'
+        'title':'Un día todos los niños, las niñas y jóvenes de Panamá tendrán la oportunidad de recibir una educación de excelencia'
     },{
         'image':'assets/images/slider/Drobis_04.JPG',
-        'title':'Un día todos los niños, las niñas y jóvenes de Panamá tendrán la oportunidad de recibir una educación de excelencia'
+        'title':'Puedes hacerlo realidad',
+        'subtitle':'<p>¡Aplica al <b>programa de liderazgo!</b> Tú eres parte del cambio y puedes ayudar a lograr una educación de calidad a todos los niños y jovenes en Panamá</p>'
     },{
         'image':'assets/images/slider/Drobis_05.JPG',
         'title':'¿Sabías que el 80% de los estudiantes de tercer grado no saben leer? Unete y se parte del cambio!'

@@ -12,11 +12,15 @@
   					<div class="slide-content">
   						<div class="row">
   							<div class="columns large-7">
-  								<h2 class="slide-title">{{ slider_image.title }}</h2><!-- /.slide-title -->
+									<h2 class="slide-title">{{ slider_image.title }}</h2><!-- /.slide-title -->
 
-  								<div class="slide-entry">
-  									<p>¡Aplica al <b>programa de liderazgo!</b> Tú eres parte del cambio y puedes ayudar a lograr una educación de calidad a todos los niños y jovenes en Panamá</p>
-  								</div><!-- /.slide-entry -->
+									{# Only render this block if the slider_image has a subtitle. #}
+									{% if slider_image.subtitle and slider_image.subtitle.strip %}
+	  								<div class="slide-entry">
+	  									{{ slider_image.subtitle|safe }}
+	  								</div><!-- /.slide-entry -->
+									{% endif %}
+
   							</div><!-- /.columns large-7 -->
 
   							<div class="columns large-5">
