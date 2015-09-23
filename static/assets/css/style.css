@@ -12891,15 +12891,16 @@ Copyright (c) 2015 Daniel Eden
 /* ------------------------------------------------------------ *	Breadcrumbs
 \* ------------------------------------------------------------ */
 .breadcrumbs {
-  display: inline-block;
-  vertical-align: top;
-  padding: 14px 20px;
-  background: #fff;
-  border-radius: 0;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  /*  Mobile  */ }
+    display: inline-block;
+    vertical-align: top;
+    /* padding: 14px 20px; */
+    background: rgb(255, 255, 255);
+    border-radius: 0;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #fff!important;
+}
   .breadcrumbs a {
     color: #CF4755; }
   .breadcrumbs > *:before {
@@ -13962,6 +13963,64 @@ a.button.red.callbox {
 }
 .section-sponsor .section-inner {
     padding: 40px 0 50px 40px;
+}
+span.perfil {
+    font-family: 'open sans';
+    font-size: 12px;
+    text-transform: uppercase;
+    /* font-weight: 400; */
+}
+span.icon.circle {
+    background-color: #298FC2;
+    /* height: 30px; */
+    /* padding: 10px; */
+    /* width: 30px!important; */
+    padding: 6px 10px;
+    margin-right: 6px;
+    color: #fff;
+    font-weight: 900;
+}
+ul.recomendaciones li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.desafio h2 {
+    font-size: 3em;
+    /* color: #298FC2; */
+    font-weight: 300;
+    margin-bottom: 30px;
+        line-height: 1.2em;
+    
+}
+.desafio h3 {
+    font-weight: 900;
+    font-size: 1.4em;
+    margin-left: 5px;
+}
+.center {
+    text-align: center;
+}
+.desafio h4 {
+    margin-top: -20px;
+    font-size: 1.5em;
+    color: #298FC2;
+    margin-left: 5px;
+}
+.circle.icon2 {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+    font-size: 35px;
+    float: right;
+    margin-top:  -5px;
+}
+.p30{
+    padding: 0 30px 0 15px;
+}
+ul.desafio li {
+    font-size: 16px;
+    line-height: 20px;
 }
 
 @media screen and (max-width: 1440px) {
