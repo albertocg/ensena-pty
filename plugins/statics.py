@@ -20,18 +20,20 @@ SOCIAL_LINKS = [
 SLIDER_IMAGE_LIST = [
     {
         'image':'assets/images/slider/slider_0.jpg',
-        'title':'¡APLICACIONES ABIERTAS para la primera cohorte de Profesionales de Enseña por Panamá!. ¡APLICA YA!'
+        'title':'¡APLICACIONES ABIERTAS!',
+        'subtitle':'<p>Para la primera cohorte de Profesionales de Enseña por Panamá. ¡Aplica Ya!</p>'
     },{
         'image':'assets/images/slider/Drobis_01.JPG',
         'title':'Puedes hacerlo realidad',
         'subtitle':'<p>¡Aplica al <b>programa de liderazgo!</b> Tú eres parte del cambio y puedes ayudar a lograr una educación de calidad a todos los niños y jovenes en Panamá</p>'
     },{
         'image':'assets/images/slider/Drobis_02.JPG',
-        'title':'¡Sé parte de un movimiento internacional!',
-        'subtitle':'<a href="http://teachforall.org/en/our-network-and-impact/network-partners" target="_blank"><p>Red TEACH FOR ALL</p></a>'
+        'title':'Red TEACH FOR ALL',
+        'subtitle':'<a href="http://teachforall.org/en/our-network-and-impact/network-partners" target="_blank"><p>Sé parte de un movimiento internacional!</p></a>'
     },{
         'image':'assets/images/slider/Drobis_03.JPG',
-        'title':'Un día todos los niños, las niñas y jóvenes de Panamá tendrán la oportunidad de recibir una educación de excelencia'
+        'title':'Nuestra misión',
+        'subtitle':'<p>Un día todos los niños, las niñas y jóvenes de Panamá tendrán la oportunidad de recibir una educación de excelencia</p>'
     },{
         'image':'assets/images/slider/Drobis_04.JPG',
         'title':'Puedes hacerlo realidad',
