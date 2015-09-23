@@ -11654,7 +11654,7 @@ Copyright (c) 2015 Daniel Eden
     .slider-intro .slide .slide-aside {
       position: relative;
       color: #ffffff;
-      background: #fc8f30; }
+      background: #CE4655; }
     .slider-intro .slide .slide-tag {
       position: absolute;
       left: 50%;
@@ -14027,11 +14027,19 @@ ul.desafio li {
 .slider-intro .slide, .slider-intro .slide-alt {
     height: 650px;
 }
-
+}
 @media screen and (max-width: 1366px) {
 .slider-intro .slide, .slider-intro .slide-alt {
     height: 600px;
 }
+}
+@media screen and (max-width: 1024px) {
+    .circle.icon2 {
+    float: LEFT;
+    margin-bottom: 10PX;
+    }
+    .callout.tfa-banner .columns img {
+        height: inherit!important; }
 }
 @media screen and (max-width: 768px) {
 .slider-intro .slide, .slider-intro .slide-alt {

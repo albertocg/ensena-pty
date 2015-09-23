@@ -10,7 +10,7 @@
       .callout.tfa-banner {
         background-color: #CF4755; }
         .callout.tfa-banner .columns img {
-          height: 30px; }
+          height: 20px; }
 
 ul.staff-items li.staff-item:nth-child(even) .staff-item-content .staff-item-actions::before {
   background: #CF4755 none repeat scroll 0% 0%; }
@@ -41,12 +41,17 @@ ul.staff-items li.staff-item:nth-child(odd) .staff-item-content .staff-item-acti
 
 .circle{
     border-radius:50%;
+    max-height: 400px;
 }
 .mb-45{
     margin-bottom: 45px!important;
 }
 .row .allies img {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+    max-width: 200px;
+}
+.column.allies {
+    text-align: center;
 }
 li.full-width {
     width: 100%;
@@ -118,6 +123,9 @@ a.download-link:hover {
 
 .slide-entry a{
   color: #fff;
+}
+.post-image {
+    text-align: center;
 }
 
 .staff-item-image img, img.gray{
