@@ -49,6 +49,7 @@ ul.staff-items li.staff-item:nth-child(odd) .staff-item-content .staff-item-acti
 .row .allies img {
     margin-bottom: 20px;
     max-width: 200px;
+    padding-right: 15px;
 }
 .column.allies {
     text-align: center;
@@ -126,6 +127,18 @@ a.download-link:hover {
 }
 .post-image {
     text-align: center;
+}
+a.slider-link {
+    color: #fff;
+}
+a.slider-link_hover {
+    background-color: #C1C1C1;
+}
+.slide-raised.rojoAlt:hover {
+    background-color: #C14E59;
+}
+.slide-to-go.rojo:hover {
+    background-color: #C04D59;
 }
 
 .staff-item-image img, img.gray{
