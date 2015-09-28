@@ -15,12 +15,12 @@
               <li><a href="{% url '/index.html' %}">Inicio</a></li>
               <li><a href="{% url '#' %}">Nosotros</a>
                 <ul>
-                  <li><a href="{% url '/team.html' %}">Nuestro equipo</a></li>
-                  <li><a href="{% url '/about.html' %}">Acerca de Nosotros</a></li>
-                  <li><a href="{% url '/teach.html' %}">Red Teach for All</a></li>
+                  <li><a href="{% url '/nosotros/equipo.html' %}">Nuestro equipo</a></li>
+                  <li><a href="{% url '/nosotros/nosotros.html' %}">Acerca de Nosotros</a></li>
+                  <li><a href="{% url '/nosotros/teach_for_all.html' %}">Red Teach for All</a></li>
                 </ul>
               </li>
-              <li><a href="{% url '/challenge.html' %}">El Desafío</a>
+              <li><a href="{% url '/desafio.html' %}">El Desafío</a>
                 <!--<ul>
                   <li><a href="{% url '/challenge.html' %}#quesucede">¿Qué Sucede?</a></li>
                   <li><a href="{% url '/challenge.html' %}#infografia">Infografía</a></li>
@@ -28,16 +28,16 @@
               </li>
               <li><a href="{% url '#' %}">Programa de Liderazgo</a>
                 <ul>
-                  <li><a href="{% url '/leadership.html' %}">¿A quién Buscamos?</a></li>
-                  <li><a href="{% url '/leadership2.html' %}">¿Cómo lo hacemos?</a></li>
-                  <li><a href="{% url '/leadership3.html' %}">¿Quiénes y cómo pueden aplicarse?</a></li>
-                  <li><a href="{% url '/leadership4.html' %}">Preparación</a></li>
-                  <li><a href="{% url '/leadership5.html' %}">¿Cómo te beneficias?</a></li>
-                  <li><a href="{% url '/leadership6.html' %}">¿Dónde Estamos?</a></li>
+                  <li><a href="{% url '/programa/quien_buscamos.html' %}">¿A quién Buscamos?</a></li>
+                  <li><a href="{% url '/programa/como_hacemos.html' %}">¿Cómo lo hacemos?</a></li>
+                  <li><a href="{% url '/programa/como_aplicar.html' %}">¿Quiénes y cómo pueden aplicarse?</a></li>
+                  <li><a href="{% url '/programa/preparacion.html' %}">Preparación</a></li>
+                  <li><a href="{% url '/programa/beneficios.html' %}">¿Cómo te beneficias?</a></li>
+                  <li><a href="{% url '/programa/ubicacion.html' %}">¿Dónde Estamos?</a></li>
                 </ul>
               </li>
               <li><a href="{% url '/alumni.html' %}">Alumni</a></li>
-              <li><a href="{% url '/allies.html' %}">Aliados</a>
+              <li><a href="{% url '/aliados.html' %}">Aliados</a>
                 <!--<ul>
                   <li><a href="{% url '/allies.html' %}#corporativos">Aliados Corporativos</a></li>
                   <li><a href="{% url '/allies.html' %}#institucionales">Aliados Institucionales</a></li>
@@ -49,8 +49,8 @@
         </nav><!-- /.nav -->
 
         <div class="header-actions">
-          <a href="{% url '/apply.html' %}" class="button red">¡Aplica!</a>
-          <a href="{% url '/page-donate.html' %}" class="button blue donate">Dona</a>
+          <a href="{% url '/aplica.html' %}" class="button red">¡Aplica!</a>
+          <a href="{% url '/donar.html' %}" class="button blue donate">Dona</a>
         </div><!-- /.header-actions -->
       </div><!-- /.header-inner --></div><!-- /.columns small-12 -->
   </div><!-- /.row -->
