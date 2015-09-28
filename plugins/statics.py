@@ -4,8 +4,14 @@
 PAGE_LINKS = [
     {'url':'index.html', 'title':'Inicio'},
     {'url':'about.html', 'title':'Nosotros'},
+    {'url':'teach.html', 'title':'Teach for All'},
     {'url':'challenge.html', 'title':'El Desafío'},
-    {'url':'leadership.html', 'title':'Programa de Liderazgo'},
+    {'url':'leadership.html', 'title':'Programa de Liderazgo - ¿A quién buscamos?'},
+    {'url':'leadership2.html', 'title':'Programa de Liderazgo - ¿Cómo lo hacemos?'},
+    {'url':'leadership3.html', 'title':'Programa de Liderazgo - ¿Quiénes y cómo pueden aplicarse?'},
+    {'url':'leadership4.html', 'title':'Programa de Liderazgo - Preparación'},
+    {'url':'leadership5.html', 'title':'Programa de Liderazgo - ¿Cómo te beneficias?'},
+    {'url':'leadership6.html', 'title':'Programa de Liderazgo - ¿Dónde estamos?'},
     {'url':'alumni.html', 'title':'Alumni'},
     {'url':'allies.html', 'title':'Aliados'},
 ]
