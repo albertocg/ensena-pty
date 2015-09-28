@@ -3,6 +3,7 @@
 
 PAGE_LINKS = [
     {'url':'index.html', 'title':'Inicio'},
+    {'url':'team.html', 'title':'Nuestro Equipo'},
     {'url':'about.html', 'title':'Nosotros'},
     {'url':'teach.html', 'title':'Teach for All'},
     {'url':'challenge.html', 'title':'El Desafío'},
