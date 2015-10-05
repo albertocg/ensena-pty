@@ -28,7 +28,7 @@ SLIDER_IMAGE_LIST = [
     {
         'image':'assets/images/slider/slider_0.jpg',
         'title':'¡APLICACIONES ABIERTAS!',
-        'subtitle':'<p>Incríbete para la primera cohorte de Profesionales de Enseña por Panamá.<br>¡Aplica Ya!</p>'
+        'subtitle':'<p>Incríbete para la primera cohorte de Profesionales de Enseña por Panamá.<div style="margin-top: -13px;" class="callout-actions"><a href="/aplica/" class="button red callbox" style="width: 50%;">¡Aplica Ya!</a></div>'
     },{
         'image':'assets/images/slider/Drobis_01.JPG',
         'title':'Puedes hacerlo realidad',
