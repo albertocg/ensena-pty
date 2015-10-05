@@ -55,7 +55,7 @@ SLIDER_IMAGE_LIST = [
 HEADER_BACKGROUND = "assets/images/header-bg.jpg"
 
 CONTACT_EMAIL = "info@ensenaporpanama.com"
-CONTACT_PHONE = "+507 322 0437"
+CONTACT_PHONE = "+507 6301 1448"
 CONTACT_ADDRESS = "Edif. 909, Calle 74 con Calle 50, San Francisco"
 
 def preBuildPage(site, page, context, data):
