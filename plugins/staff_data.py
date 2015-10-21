@@ -37,6 +37,16 @@ STAFF_DATA = [
         'photo': 'assets/images/staff/julio_escobar.jpg',
         'tagline': 'Asesor',
     },
+    {
+        'name': 'Marta Amorós',
+        'photo': 'assets/images/staff/marta_amoros.jpg',
+        'tagline': 'Tutora',
+    },
+    {
+        'name': 'Mercedes Gaitán',
+        'photo': 'assets/images/staff/mercedes_gaitan.jpg',
+        'tagline': 'Tutora',
+    }
 ]
 
 # Adds extra attributes programatically to the staff items.

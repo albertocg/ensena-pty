@@ -13966,7 +13966,6 @@ h4.section-title i {
 }
 .icon-left-p {
     font-size: 14px;
-    font-family: 'Open Sans';
     line-height: 20px!important;
     font-weight: 400;
 }
@@ -14014,7 +14013,7 @@ ul.recomendaciones li {
     font-weight: 300;
     margin-bottom: 30px;
         line-height: 1.2em;
-    
+
 }
 .desafio h3 {
     font-weight: 900;
